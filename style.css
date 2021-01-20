@@ -20,6 +20,10 @@ body {
 header {
     grid-area: header;
 }
+header i {
+    font-size: 32px;
+    padding: 2rem;
+}
 
 nav {
     grid-area: nav;
@@ -31,7 +35,21 @@ nav ul li {
     list-style-type: none;
     display: inline;
     padding: 1rem;
+    font-size: 16px;
 }
+a:link {
+    color: white;
+    text-decoration: none;
+}
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    color: #03fcec;
+    text-decoration: underline;
+}
+
 #intro {
     grid-area: intro;
     grid-column: 1 / span 3;

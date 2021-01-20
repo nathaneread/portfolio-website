@@ -1,0 +1,68 @@
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    display: grid;
+    grid-template-areas:    "header nav"
+                            "intro intro"
+                            "aboutme aboutme"
+                            "projects projects"
+                            "contact contact"
+                            "footer footer";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 5% 1fr 550px 1fr 1fr 5%;
+    grid-gap: 10px;
+    background-color:#131d36
+}
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+    color: white;
+    padding: 2rem;
+    margin-left: 400px;
+}
+nav ul li {
+    list-style-type: none;
+    display: inline;
+    padding: 1rem;
+}
+#intro {
+    grid-area: intro;
+    grid-column: 1 / span 3;
+    color: white;
+    height: 35rem;
+    padding-left: 32rem;
+}
+
+#intro h1 {
+    font-size: 65px;
+    opacity: 75%;
+}
+#intro h3 {
+    font-size: 35px;
+} 
+#intro p {
+    width: 40rem;
+}
+#aboutme {
+    grid-area: aboutme;
+    background-color: #cfcfcf;
+}
+#projects {
+    grid-area: projects;
+}
+
+#contact {
+    grid-area: contact;
+    background-color: #cfcfcf;
+}
+
+footer {
+    grid-area: footer;
+}

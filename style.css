@@ -2,6 +2,7 @@ html {
     margin: 0;
     padding: 0;
     font-family: 'Roboto Mono', monospace;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -13,9 +14,15 @@ body {
                             "contact contact"
                             "footer footer";
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 5% 1fr 550px 1fr 1fr 5%;
-    grid-gap: 10px;
+    grid-template-rows: 8% 1fr 550px 1fr 1fr 5%;
     background-color:#131d36
+}
+#amphoto {
+    height: 550px; width: 950px;
+}
+#pphoto {
+    height: 575px; width: 937px;
+    float: right;
 }
 header {
     grid-area: header;
@@ -47,26 +54,63 @@ a:visited {
 }
 a:hover {
     color: #03fcec;
-    text-decoration: underline;
 }
+
 
 #intro {
     grid-area: intro;
-    grid-column: 1 / span 3;
+    grid-column: 1 / span 2;
     color: white;
     height: 35rem;
     padding-left: 32rem;
+    position: relative;
 }
 
 #intro h1 {
     font-size: 65px;
     opacity: 75%;
+    position: relative;
 }
-#intro h3 {
-    font-size: 35px;
-} 
 #intro p {
     width: 40rem;
+    position: relative;
+}
+/* #intro img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+} */
+#amtitle {
+    position: absolute;
+    color: white;
+    font-size: 48px;
+    padding-left: 4rem;
+}
+#ampara {
+    position: absolute;
+    color: white;
+    padding-left: 4rem;
+    padding-top: 6rem;
+}
+#ampara2 {
+    color:black;
+    font-size: 1.5rem;
+    width: 20rem;;
+    position: absolute;
+    margin-left: 63rem;
+    padding-top: 6rem;
+}
+#amlist {
+    color:black;
+    font-size: 1.25rem;
+    width: 20rem;;
+    position: absolute;
+    margin-left: 63rem;
+    margin-top: 4rem;
+    padding-top: 6rem;
 }
 #aboutme {
     grid-area: aboutme;
